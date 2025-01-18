@@ -11,9 +11,9 @@ GeminiCommit is a VSCode extension that automatically generates commit messages 
 ## Features
 
 - AI-powered commit message generation
-- Multiple commit message formats (Conventional, Angular, Karma, Semantic, Emoji)
+- Multiple commit message formats (Conventional, Angular, Karma, Semantic, Emoji, Conventional-Emoji)
 - Support for Google's Gemini AI and custom endpoints (OpenAI API)
-- Multi-language support (English and Russian, with more languages available upon request)
+- Multi-language support (English, Russian, and Turkish)
 - Customizable commit message instructions
 - Option to include references (e.g., issue numbers)
 - Secure API key storage
@@ -49,11 +49,11 @@ GeminiCommit is a VSCode extension that automatically generates commit messages 
 
 - **Commit Language** (`geminiCommit.commit.commitLanguage`):
 
-  - Languages: English (default) or Russian
+  - Languages: English (default), Russian, or Turkish
   - Note: Some formats may have limited support for non-English languages
 
 - **Commit Format** (`geminiCommit.commit.commitFormat`):
-  - Available formats: Conventional (default), Angular, Karma, Semantic, Emoji
+  - Available formats: Conventional (default), Angular, Karma, Semantic, Emoji, Conventional-Emoji
   - Each format has its own structure and rules
 - **Custom Instructions**:
   - Enable with `geminiCommit.commit.useCustomInstructions`
@@ -119,8 +119,43 @@ The extension supports multiple commit message formats:
    ```
 
 5. **Emoji**
+
    ```
    :emoji: message
+
+   Common emojis:
+   ✨ - New feature
+   🐛 - Bug fix
+   📚 - Documentation
+   💄 - UI/style changes
+   ♻️ - Refactoring
+   ✅ - Tests
+   🔧 - Configuration
+   ⚡️ - Performance
+   🔒 - Security
+   📦 - Dependencies/Packages
+   🎨 - Code style/format
+   🔥 - Remove code/files
+   🚀 - Deploy/Release
+   🌐 - Internationalization
+   🔍 - SEO
+   📱 - Responsive design
+   🏗️ - Architecture changes
+   🎯 - Hit goals/targets
+   🔊 - Add logs
+   🔇 - Remove logs
+   ```
+
+6. **Conventional-Emoji**
+
+   ```
+   <emoji> <type>(<scope>): <description>
+
+   [optional body with bullet points]
+
+   Example:
+   ✨ feat(auth): add Google OAuth integration
+   🐛 fix(api): fix token expiration issue
    ```
 
 Each format has its own set of types and rules. For small changes, only the header line is generated. For complex changes, a detailed body with bullet points is included.
@@ -215,6 +250,7 @@ GeminiCommit - расширение VSCode для автоматической �
 3. **Karma**
 4. **Semantic**
 5. **Emoji**
+6. **Conventional-Emoji**
 
 Каждый формат имеет свой набор типов и правил. Для небольших изменений генерируется только заголовок, для сложных изменений добавляется детальное описание с пунктами.
 
@@ -270,3 +306,76 @@ Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+# GeminiCommit (Türkçe)
+
+GeminiCommit, Google'ın Gemini AI'sını veya OpenAI API endpoint'ini (OpenAI, Ollama, LocalAI ve diğerleri) kullanarak otomatik commit mesajları oluşturan bir VSCode eklentisidir.
+
+### Hızlı Başlangıç & Kullanım
+
+1. [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VizzleTF.geminicommit)'ten yükleyin
+2. API anahtarını ayarlayın:
+   - Gemini AI için: [Google AI Studio](https://aistudio.google.com/app/apikey)'dan anahtar alın
+   - Özel endpoint için: Ayarlardan yapılandırın
+3. API anahtarını ayarlamak için Komut Paleti'ni (Ctrl+Shift+P) kullanın
+4. VS Code ayarlarından tercihlerinizi yapılandırın:
+   - Tercih ettiğiniz commit formatını seçin
+   - Dili seçin
+   - Gerekirse özel talimatları etkinleştirin
+   - Commit davranışını yapılandırın:
+     - "Only Staged Changes": Etkinleştirildiğinde, sadece staged değişiklikleri commit eder
+     - Devre dışı bırakıldığında:
+       - Staged değişiklikler varsa, sadece onları commit eder
+       - Staged değişiklik yoksa, tüm değiştirilmiş dosyaları `git commit -a` kullanarak commit eder
+     - "Auto Commit": Mesaj oluşturulduktan sonra otomatik commit yapar
+     - "Auto Push": Etkinleştirildiğinde (ve Auto Commit etkinken), commit'ten sonra otomatik push yapar
+5. Source Control görünümünde "Generate Commit Message"a tıklayın
+6. (İsteğe bağlı) İstenirse referansları girin
+7. Oluşturulan mesajı inceleyin ve düzenleyin
+8. Commit/push ayarlarınıza göre otomatik olarak gerçekleştirilir
+
+### Commit Formatları
+
+Eklenti birden fazla commit mesaj formatını destekler:
+
+1. **Conventional Commits** (varsayılan)
+2. **Angular**
+3. **Karma**
+4. **Semantic**
+5. **Emoji**
+6. **Conventional-Emoji**
+
+Her format kendi tip ve kurallarına sahiptir. Küçük değişiklikler için sadece başlık satırı, karmaşık değişiklikler için madde işaretli detaylı açıklama oluşturulur.
+
+### Modeller & Endpoint'ler
+
+Kullanılabilir ücretsiz modeller:
+
+- `gemini-1.0-pro`: Temel model, genel kullanım için uygun
+- `gemini-1.5-pro`: Daha iyi anlama yeteneğine sahip geliştirilmiş versiyon
+- `gemini-1.5-flash`: Hız için optimize edilmiş (varsayılan)
+- `gemini-2.0-flash-exp`: En son iyileştirmelere sahip deneysel model
+
+---
+
+Eklenti, OpenAI uyumlu API endpoint'lerini destekler. Bu sayede:
+
+- OpenAI API'yi doğrudan kullanabilirsiniz
+- OpenAI uyumlu API'ye sahip kendi LLM'lerinizi kullanabilirsiniz
+- LocalAI, ollama veya diğer OpenAI API proxy'lerine bağlanabilirsiniz
+
+Özel endpoint yapılandırmak için:
+
+1. Ayarlardan "Use Custom Endpoint"i etkinleştirin
+2. Endpoint URL'nizi ayarlayın (örn. OpenAI için "https://api.openai.com/v1")
+3. Model adınızı ayarlayın (örn. OpenAI için "gpt-3.5-turbo")
+4. API anahtarını ayarlamak için Komut Paleti'ni (Ctrl+Shift+P) kullanın
+
+## Topluluk & Destek
+
+### 📢 Güncel Kalın
+
+- [Telegram Kanalı](https://t.me/geminicommit) - Sürüm duyuruları ve güncellemeler
+- [Telegram Grubu](https://t.me/gemini_commit) - Topluluk tartışmaları ve destek
