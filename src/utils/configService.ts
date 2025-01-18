@@ -167,7 +167,13 @@ export class ConfigService {
     }
 
     static getCommitLanguage(): string {
-        return this.getConfig<string>('commit', 'commitLanguage', 'english');
+        const languageMap: Record<string, string> = {
+            'english': 'en',
+            'russian': 'ru',
+            'turkish': 'tr'
+        };
+        const configLang = this.getConfig<string>('commit', 'commitLanguage', 'english');
+        return languageMap[configLang] || 'en';
     }
 
     static getCommitFormat(): string {
