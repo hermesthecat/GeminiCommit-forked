@@ -63,5 +63,40 @@ refactor(core): оптимизировать запросы к БД
 
 - Внедрить кеширование запросов
 - Добавить пул соединений
-- Обновить обработку ошибок`
+- Обновить обработку ошибок`,
+
+    tr: `Angular commit formatında bir commit mesajı oluştur:
+<tip>(<kapsam>): <kısa özet>
+
+[isteğe bağlı detaylı açıklama]
+
+[isteğe bağlı alt notlar]
+
+Tip seçim kuralları:
+- feat: Yeni özellik
+- fix: Hata düzeltme
+- docs: Sadece dokümantasyon değişiklikleri
+- style: Kod davranışını etkilemeyen değişiklikler (boşluk, biçimlendirme, noktalı virgül vb.)
+- refactor: Hata düzeltmeyen ve yeni özellik eklemeyen kod değişikliği
+- perf: Performans iyileştirmeleri
+- test: Eksik testleri ekleme veya mevcut testleri düzeltme
+- build: Derleme sistemini veya harici bağımlılıkları etkileyen değişiklikler
+- ci: CI yapılandırma dosyaları ve betiklerindeki değişiklikler
+- chore: Kaynak kodu değiştirmeyen diğer değişiklikler
+
+Örnekler:
+feat(auth): kullanıcı oturum açma özelliği ekle
+
+Kullanıcıların email ve şifre ile oturum açmalarını sağlar.
+- JWT tabanlı kimlik doğrulama
+- Oturum süresi yönetimi
+- Güvenli şifre hashleme
+
+BREAKING CHANGE: Eski oturum açma API'si kaldırıldı
+
+fix(api): bellek sızıntısı sorununu düzelt
+
+Uzun süreli WebSocket bağlantılarında oluşan bellek sızıntısı düzeltildi.
+- Kapatılmayan bağlantılar temizlendi
+- Bellek kullanımı optimize edildi`
 };

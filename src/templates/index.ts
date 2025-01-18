@@ -10,7 +10,7 @@ export interface CommitTemplate {
 }
 
 export type CommitFormat = 'conventional' | 'angular' | 'karma' | 'semantic' | 'emoji' | 'conventionalEmoji';
-export type Language = 'en' | 'ru';
+export type Language = 'en' | 'ru' | 'tr';
 
 const templates: Record<CommitFormat, CommitTemplate> = {
     conventional: conventionalTemplate,

@@ -27,5 +27,22 @@ feat: add user avatar upload functionality`,
 - chore: Изменения в процессе сборки или вспомогательных инструментах
 
 Пример:
-feat: добавить загрузку аватара пользователя`
+feat: добавить загрузку аватара пользователя`,
+
+    tr: `Semantic formatta bir commit mesajı oluştur:
+<tip>: <mesaj>
+
+Tipler:
+- feat: Yeni özellik
+- fix: Hata düzeltme
+- docs: Dokümantasyon
+- style: Stil değişiklikleri
+- refactor: Kod yenileme
+- test: Test değişiklikleri
+- chore: Genel bakım
+
+Örnek:
+feat: kullanıcı profil sayfası ekle
+fix: oturum açma hatası düzelt
+docs: API belgelerini güncelle`
 };

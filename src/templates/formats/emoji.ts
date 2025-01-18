@@ -33,5 +33,23 @@ Example:
 
 Пример:
 ✨ добавить функцию совместной работы в реальном времени
-🐛 исправить срок действия токена аутентификации`
+🐛 исправить срок действия токена аутентификации`,
+
+    tr: `Emoji formatında bir commit mesajı oluştur:
+:emoji: commit mesajı
+
+Yaygın emojiler:
+✨ :sparkles: - Yeni özellik
+🐛 :bug: - Hata düzeltme
+📚 :books: - Dokümantasyon
+💄 :lipstick: - Arayüz/stil değişiklikleri
+♻️ :recycle: - Kod yenileme
+✅ :white_check_mark: - Testler
+🔧 :wrench: - Yapılandırma
+⚡️ :zap: - Performans
+🔒 :lock: - Güvenlik
+
+Örnek:
+✨ gerçek zamanlı işbirliği özelliği ekle
+🐛 kimlik doğrulama token süresi hatasını düzelt`
 };

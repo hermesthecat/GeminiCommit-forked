@@ -75,5 +75,44 @@ feat(auth): добавить аутентификацию пользовател
 
 - Внедрить интеграцию с OAuth2
 - Создать модуль сервиса авторизации
-- Добавить управление сессиями`
+- Добавить управление сессиями`,
+
+    tr: `Conventional Commits formatında bir commit mesajı oluştur:
+<tip>[isteğe bağlı kapsam]: <açıklama>
+
+[isteğe bağlı gövde madde işaretleriyle]
+
+Kurallar:
+1. İlk satır: tip(kapsam): açıklama (maks 50 karakter)
+2. Küçük değişiklikler için sadece ilk satır
+3. Karmaşık değişiklikler için anahtar noktaları listele:
+   - Her satır "- " ile başlar
+   - Her satır maks 50 karakter
+
+Tip seçim kuralları:
+- docs: Dokümantasyon dosyalarındaki değişiklikler (*.md, docs/*)
+- feat: Yeni özellikler veya önemli işlevsel değişiklikler
+- fix: Hata düzeltmeleri
+- style: Biçimlendirme, noktalı virgül vb. (kod değişikliği yok)
+- refactor: Hata düzeltmeyen veya özellik eklemeyen kod değişiklikleri
+- perf: Performans iyileştirmeleri
+- test: Test ekleme veya güncelleme
+- build: Derleme sistemi veya bağımlılıklar
+- ci: CI/CD değişiklikleri
+- chore: Diğer bakım görevleri
+
+Örnekler:
+Dokümantasyon değişikliği:
+docs: kurulum ve kullanım kılavuzlarını güncelle
+
+- Yeni özellik açıklamaları ekle
+- Yapılandırma bölümünü güncelle
+- Kullanım örnekleri ekle
+
+Özellik değişikliği:
+feat(auth): kullanıcı kimlik doğrulaması ekle
+
+- OAuth2 sağlayıcı entegrasyonunu uygula
+- Kimlik doğrulama servis modülünü oluştur
+- Oturum yönetimini ekle`
 };

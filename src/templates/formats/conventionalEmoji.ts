@@ -75,5 +75,44 @@ Bug fix:
 - Создать модуль сервиса аналитики
 
 Исправление ошибки:
-🐛 fix(api): исправить проблему с истечением токена`
+🐛 fix(api): исправить проблему с истечением токена`,
+
+    tr: `Conventional-Emoji formatında bir commit mesajı oluştur:
+<emoji> <tip>(<kapsam>): <açıklama>
+
+[isteğe bağlı gövde madde işaretleriyle]
+
+Tipler ve Emojiler:
+- ✨ feat: - Yeni özellikler
+- 🐛 fix: - Hata düzeltmeleri
+- 📚 docs: - Dokümantasyon
+- 💄 style: - Biçimlendirme/Arayüz
+- ♻️ refactor: - Kod yenileme
+- ✅ test: - Testler
+- 🔧 build: - Derleme/bağımlılıklar
+- ⚡️ perf: - Performans
+- 🚀 ci: - CI/CD
+- 🔨 chore: - Bakım
+- 🔒 security: - Güvenlik
+
+Kurallar:
+1. İlk satır: emoji tip(kapsam): açıklama (maks 50 karakter)
+2. Küçük değişiklikler için sadece ilk satır
+3. Karmaşık değişiklikler için anahtar noktaları listele:
+   - Her satır "- " ile başlar
+   - Her satır maks 50 karakter
+
+Örnekler:
+Basit değişiklik:
+✨ feat(auth): Google OAuth entegrasyonu ekle
+
+Karmaşık değişiklik:
+✨ feat(dashboard): gerçek zamanlı analitik ekle
+
+- Canlı güncellemeler için websocket bağlantısı ekle
+- Veri görselleştirme bileşenlerini uygula
+- Analitik servis modülünü oluştur
+
+Hata düzeltme:
+🐛 fix(api): token süresi hatası düzelt`
 }; 

@@ -27,5 +27,22 @@ chore(ci): update deployment script to Node 16`,
 - chore: Обслуживание
 
 Пример:
-chore(ci): обновить скрипт деплоя до Node 16`
+chore(ci): обновить скрипт деплоя до Node 16`,
+
+    tr: `Karma formatında bir commit mesajı oluştur:
+<tip>(<kapsam>): <mesaj>
+
+Tipler:
+- feat: Yeni özellik
+- fix: Hata düzeltme
+- docs: Dokümantasyon
+- style: Stil değişiklikleri
+- refactor: Kod yenileme
+- test: Test değişiklikleri
+- chore: Genel bakım
+
+Örnek:
+feat(login): sosyal medya girişi ekle
+fix(api): hatalı istek yönetimini düzelt
+docs(readme): kurulum talimatlarını güncelle`
 };
