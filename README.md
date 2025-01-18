@@ -91,6 +91,7 @@ GeminiCommit is a VSCode extension that automatically generates commit messages 
 The extension supports multiple commit message formats:
 
 1. **Conventional Commits** (default)
+
    ```shell
    <type>[optional scope]: <description>
 
@@ -98,6 +99,7 @@ The extension supports multiple commit message formats:
    ```
 
 2. **Angular**
+
    ```shell
    <type>(<scope>): <short summary>
 
@@ -105,16 +107,19 @@ The extension supports multiple commit message formats:
    ```
 
 3. **Karma**
+
    ```shell
    <type>(<scope>): <message>
    ```
 
 4. **Semantic**
+
    ```shell
    type: message
    ```
 
 5. **Emoji**
+
    ```shell
    :emoji: message
 
@@ -142,6 +147,7 @@ The extension supports multiple commit message formats:
    ```
 
 6. **Conventional-Emoji**
+
    ```shell
    <emoji> <type>(<scope>): <description>
 
