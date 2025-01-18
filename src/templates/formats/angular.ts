@@ -1,5 +1,5 @@
 export const angularTemplate = {
-    en: `Generate a commit message following the Angular format:
+  en: `Generate a commit message following the Angular format:
 <type>(<scope>): <short summary>
 
 [optional body with bullet points]
@@ -32,7 +32,7 @@ refactor(core): optimize database queries
 - Add connection pooling
 - Update error handling`,
 
-    ru: `Создайте сообщение коммита в формате Angular:
+  ru: `Создайте сообщение коммита в формате Angular:
 <тип>(<область>): <краткое описание>
 
 [опциональное тело со списком изменений]
@@ -65,7 +65,7 @@ refactor(core): оптимизировать запросы к БД
 - Добавить пул соединений
 - Обновить обработку ошибок`,
 
-    tr: `Angular commit formatında bir commit mesajı oluştur:
+  tr: `Angular commit formatında bir commit mesajı oluştur:
 <tip>(<kapsam>): <kısa özet>
 
 [isteğe bağlı detaylı açıklama]
@@ -98,5 +98,5 @@ fix(api): bellek sızıntısı sorununu düzelt
 
 Uzun süreli WebSocket bağlantılarında oluşan bellek sızıntısı düzeltildi.
 - Kapatılmayan bağlantılar temizlendi
-- Bellek kullanımı optimize edildi`
+- Bellek kullanımı optimize edildi`,
 };

@@ -1,5 +1,5 @@
 export const conventionalTemplate = {
-    en: `Generate a commit message following the Conventional Commits format:
+  en: `Generate a commit message following the Conventional Commits format:
 <type>[optional scope]: <description>
 
 [optional body with bullet points]
@@ -38,7 +38,7 @@ feat(auth): add user authentication
 - Create auth service module
 - Add session management`,
 
-    ru: `Создайте сообщение коммита в формате Conventional Commits:
+  ru: `Создайте сообщение коммита в формате Conventional Commits:
 <тип>[область]: <описание>
 
 [опциональное тело со списком изменений]
@@ -77,7 +77,7 @@ feat(auth): добавить аутентификацию пользовател
 - Создать модуль сервиса авторизации
 - Добавить управление сессиями`,
 
-    tr: `Conventional Commits formatında bir commit mesajı oluştur:
+  tr: `Conventional Commits formatında bir commit mesajı oluştur:
 <tip>[isteğe bağlı kapsam]: <açıklama>
 
 [isteğe bağlı gövde madde işaretleriyle]
@@ -114,5 +114,5 @@ feat(auth): kullanıcı kimlik doğrulaması ekle
 
 - OAuth2 sağlayıcı entegrasyonunu uygula
 - Kimlik doğrulama servis modülünü oluştur
-- Oturum yönetimini ekle`
+- Oturum yönetimini ekle`,
 };

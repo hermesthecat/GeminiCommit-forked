@@ -1,5 +1,5 @@
 export const karmaTemplate = {
-    en: `Generate a commit message following the Karma format:
+  en: `Generate a commit message following the Karma format:
 <type>(<scope>): <message>
 
 Types:
@@ -14,7 +14,7 @@ Types:
 Example:
 chore(ci): update deployment script to Node 16`,
 
-    ru: `Создайте сообщение коммита в формате Karma:
+  ru: `Создайте сообщение коммита в формате Karma:
 <тип>(<область>): <сообщение>
 
 Типы:
@@ -29,7 +29,7 @@ chore(ci): update deployment script to Node 16`,
 Пример:
 chore(ci): обновить скрипт деплоя до Node 16`,
 
-    tr: `Karma formatında bir commit mesajı oluştur:
+  tr: `Karma formatında bir commit mesajı oluştur:
 <tip>(<kapsam>): <mesaj>
 
 Tipler:
@@ -44,5 +44,5 @@ Tipler:
 Örnek:
 feat(login): sosyal medya girişi ekle
 fix(api): hatalı istek yönetimini düzelt
-docs(readme): kurulum talimatlarını güncelle`
+docs(readme): kurulum talimatlarını güncelle`,
 };

@@ -1,5 +1,5 @@
 export const emojiTemplate = {
-    en: `Generate a commit message following the Emoji format:
+  en: `Generate a commit message following the Emoji format:
 :emoji: commit message
 
 Common emojis:
@@ -12,12 +12,23 @@ Common emojis:
 🔧 :wrench: - Configuration
 ⚡️ :zap: - Performance
 🔒 :lock: - Security
+📦 :package: - Dependencies/Packages
+🎨 :art: - Code style/format
+🔥 :fire: - Remove code/files
+🚀 :rocket: - Deploy/Release
+🌐 :globe_with_meridians: - Internationalization
+🔍 :mag: - SEO
+📱 :iphone: - Responsive design
+🏗️ :building_construction: - Architecture changes
+🎯 :dart: - Hit goals/targets
+🔊 :loud_sound: - Add logs
+🔇 :mute: - Remove logs
 
 Example:
 ✨ add real-time collaboration feature
 🐛 fix authentication token expiration`,
 
-    ru: `Создайте сообщение коммита в формате Emoji:
+  ru: `Создайте сообщение коммита в формате Emoji:
 :emoji: сообщение коммита
 
 Часто используемые эмодзи:
@@ -30,12 +41,23 @@ Example:
 🔧 :wrench: - Конфигурация
 ⚡️ :zap: - Производительность
 🔒 :lock: - Безопасность
+📦 :package: - Зависимости/Пакеты
+🎨 :art: - Стиль/формат кода
+🔥 :fire: - Удаление кода/файлов
+🚀 :rocket: - Развертывание/Релиз
+🌐 :globe_with_meridians: - Интернационализация
+🔍 :mag: - SEO
+📱 :iphone: - Адаптивный дизайн
+🏗️ :building_construction: - Изменения архитектуры
+🎯 :dart: - Достижение целей
+🔊 :loud_sound: - Добавление логов
+🔇 :mute: - Удаление логов
 
 Пример:
 ✨ добавить функцию совместной работы в реальном времени
 🐛 исправить срок действия токена аутентификации`,
 
-    tr: `Emoji formatında bir commit mesajı oluştur:
+  tr: `Emoji formatında bir commit mesajı oluştur:
 :emoji: commit mesajı
 
 Yaygın emojiler:
@@ -48,8 +70,19 @@ Yaygın emojiler:
 🔧 :wrench: - Yapılandırma
 ⚡️ :zap: - Performans
 🔒 :lock: - Güvenlik
+📦 :package: - Bağımlılıklar/Paketler
+🎨 :art: - Kod stili/formatı
+🔥 :fire: - Kod/dosya silme
+🚀 :rocket: - Dağıtım/Sürüm
+🌐 :globe_with_meridians: - Yerelleştirme
+🔍 :mag: - SEO
+📱 :iphone: - Responsive tasarım
+🏗️ :building_construction: - Mimari değişiklikler
+🎯 :dart: - Hedeflere ulaşma
+🔊 :loud_sound: - Log ekleme
+🔇 :mute: - Log kaldırma
 
 Örnek:
 ✨ gerçek zamanlı işbirliği özelliği ekle
-🐛 kimlik doğrulama token süresi hatasını düzelt`
+🐛 kimlik doğrulama token süresi hatasını düzelt`,
 };

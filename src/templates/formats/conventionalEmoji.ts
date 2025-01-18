@@ -1,5 +1,5 @@
 export const conventionalEmojiTemplate = {
-    en: `Generate a commit message following the Conventional-Emoji format:
+  en: `Generate a commit message following the Conventional-Emoji format:
 <emoji> <type>(<scope>): <description>
 
 [optional body with bullet points]
@@ -16,6 +16,15 @@ Types and Emojis:
 - 🚀 ci: - CI/CD
 - 🔨 chore: - Maintenance
 - 🔒 security: - Security
+- 📦 pkg: - Package updates
+- 🎨 format: - Code style/format
+- 🔥 remove: - Remove code/files
+- 🌐 i18n: - Internationalization
+- 🔍 seo: - SEO improvements
+- 📱 ui: - Responsive/Mobile
+- 🏗️ arch: - Architecture
+- 🎯 goal: - Milestones/Goals
+- 🔊 log: - Logging
 
 Rules:
 1. First line: emoji type(scope): description (max 50 chars)
@@ -29,16 +38,16 @@ Simple change:
 ✨ feat(auth): add Google OAuth integration
 
 Complex change:
-✨ feat(dashboard): add real-time analytics
+🏗️ arch(core): redesign data flow architecture
 
-- Add websocket connection for live updates
-- Implement data visualization components
-- Create analytics service module
+- Implement new state management pattern
+- Add event-driven communication
+- Update service layer structure
 
 Bug fix:
 🐛 fix(api): fix token expiration issue`,
 
-    ru: `Создайте сообщение коммита в формате Conventional-Emoji:
+  ru: `Создайте сообщение коммита в формате Conventional-Emoji:
 <эмодзи> <тип>(<область>): <описание>
 
 [опциональное тело со списком изменений]
@@ -55,6 +64,15 @@ Bug fix:
 - 🚀 ci: - CI/CD
 - 🔨 chore: - Обслуживание
 - 🔒 security: - Безопасность
+- 📦 pkg: - Обновления пакетов
+- 🎨 format: - Стиль/формат кода
+- 🔥 remove: - Удаление кода/файлов
+- 🌐 i18n: - Интернационализация
+- 🔍 seo: - Улучшения SEO
+- 📱 ui: - Адаптивность/Мобильность
+- 🏗️ arch: - Архитектура
+- 🎯 goal: - Этапы/Цели
+- 🔊 log: - Логирование
 
 Правила:
 1. Первая строка: эмодзи тип(область): описание (макс 50 символов)
@@ -68,16 +86,16 @@ Bug fix:
 ✨ feat(auth): добавить интеграцию с Google OAuth
 
 Сложное изменение:
-✨ feat(dashboard): добавить аналитику в реальном времени
+🏗️ arch(core): переработать архитектуру потока данных
 
-- Добавить websocket подключение для живых обновлений
-- Внедрить компоненты визуализации данных
-- Создать модуль сервиса аналитики
+- Внедрить новый паттерн управления состоянием
+- Добавить событийное взаимодействие
+- Обновить структуру слоя сервисов
 
 Исправление ошибки:
 🐛 fix(api): исправить проблему с истечением токена`,
 
-    tr: `Conventional-Emoji formatında bir commit mesajı oluştur:
+  tr: `Conventional-Emoji formatında bir commit mesajı oluştur:
 <emoji> <tip>(<kapsam>): <açıklama>
 
 [isteğe bağlı gövde madde işaretleriyle]
@@ -94,6 +112,15 @@ Tipler ve Emojiler:
 - 🚀 ci: - CI/CD
 - 🔨 chore: - Bakım
 - 🔒 security: - Güvenlik
+- 📦 pkg: - Paket güncellemeleri
+- 🎨 format: - Kod stili/formatı
+- 🔥 remove: - Kod/dosya silme
+- 🌐 i18n: - Yerelleştirme
+- 🔍 seo: - SEO iyileştirmeleri
+- 📱 ui: - Responsive/Mobil
+- 🏗️ arch: - Mimari
+- 🎯 goal: - Kilometre taşları/Hedefler
+- 🔊 log: - Loglama
 
 Kurallar:
 1. İlk satır: emoji tip(kapsam): açıklama (maks 50 karakter)
@@ -107,12 +134,12 @@ Basit değişiklik:
 ✨ feat(auth): Google OAuth entegrasyonu ekle
 
 Karmaşık değişiklik:
-✨ feat(dashboard): gerçek zamanlı analitik ekle
+🏗️ arch(core): veri akış mimarisini yeniden tasarla
 
-- Canlı güncellemeler için websocket bağlantısı ekle
-- Veri görselleştirme bileşenlerini uygula
-- Analitik servis modülünü oluştur
+- Yeni durum yönetimi desenini uygula
+- Olay tabanlı iletişimi ekle
+- Servis katmanı yapısını güncelle
 
 Hata düzeltme:
-🐛 fix(api): token süresi hatası düzelt`
-}; 
+🐛 fix(api): token süresi hatasını düzelt`,
+};

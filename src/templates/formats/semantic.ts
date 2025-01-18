@@ -1,5 +1,5 @@
 export const semanticTemplate = {
-    en: `Generate a commit message following the Semantic format:
+  en: `Generate a commit message following the Semantic format:
 type: message
 
 Types:
@@ -14,7 +14,7 @@ Types:
 Example:
 feat: add user avatar upload functionality`,
 
-    ru: `Создайте сообщение коммита в формате Semantic:
+  ru: `Создайте сообщение коммита в формате Semantic:
 тип: сообщение
 
 Типы:
@@ -29,7 +29,7 @@ feat: add user avatar upload functionality`,
 Пример:
 feat: добавить загрузку аватара пользователя`,
 
-    tr: `Semantic formatta bir commit mesajı oluştur:
+  tr: `Semantic formatta bir commit mesajı oluştur:
 <tip>: <mesaj>
 
 Tipler:
@@ -44,5 +44,5 @@ Tipler:
 Örnek:
 feat: kullanıcı profil sayfası ekle
 fix: oturum açma hatası düzelt
-docs: API belgelerini güncelle`
+docs: API belgelerini güncelle`,
 };
