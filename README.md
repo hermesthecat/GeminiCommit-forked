@@ -9,6 +9,7 @@ GeminiCommit is a VSCode extension that automatically generates commit messages 
 [Features](#features) • [Quick Start & Usage](#quick-start--usage) • [Settings](#settings) • [Commit Formats](#commit-formats) • [Gemini Models & Custom Endpoints](#gemini-models--custom-endpoints) • [Example Messages](#example-messages)
 
 ## Features
+
 - AI-powered commit message generation
 - Multiple commit message formats (Conventional, Angular, Karma, Semantic, Emoji)
 - Support for Google's Gemini AI and custom endpoints (OpenAI API)
@@ -45,33 +46,38 @@ GeminiCommit is a VSCode extension that automatically generates commit messages 
 ## Settings
 
 ### Commit Message Generation
+
 - **Commit Language** (`geminiCommit.commit.commitLanguage`):
+
   - Languages: English (default) or Russian
   - Note: Some formats may have limited support for non-English languages
 
 - **Commit Format** (`geminiCommit.commit.commitFormat`):
   - Available formats: Conventional (default), Angular, Karma, Semantic, Emoji
   - Each format has its own structure and rules
-  
 - **Custom Instructions**:
   - Enable with `geminiCommit.commit.useCustomInstructions`
   - Set instructions in `geminiCommit.commit.customInstructions`
   - Must not be empty when enabled
 
 ### References
+
 - **Prompt for Refs** (`geminiCommit.commit.promptForRefs`):
   - When enabled, prompts for issue numbers or references
   - Consider disabling when using Auto Commit to avoid interrupting the flow
 
 ### Commit Behavior
+
 - **Only Staged Changes** (`geminiCommit.commit.onlyStagedChanges`):
   - When `true`: Only commits changes that have been staged with `git add`
-  - When `false`: 
+  - When `false`:
     - If there are staged changes, commits only those changes
     - If there are no staged changes, commits all tracked modified files using `git commit -a`
 
 ### Automation
+
 - **Auto Commit** (`geminiCommit.commit.autoCommit`):
+
   - When `true`: Automatically creates a commit after generating the message
   - When `false`: Only generates and sets the commit message, leaving manual commit control to you
 
@@ -85,25 +91,29 @@ GeminiCommit is a VSCode extension that automatically generates commit messages 
 The extension supports multiple commit message formats:
 
 1. **Conventional Commits** (default)
+
    ```
    <type>[optional scope]: <description>
-   
+
    [optional body with bullet points]
    ```
 
 2. **Angular**
+
    ```
    <type>(<scope>): <short summary>
-   
+
    [optional body with bullet points]
    ```
 
 3. **Karma**
+
    ```
    <type>(<scope>): <message>
    ```
 
 4. **Semantic**
+
    ```
    type: message
    ```
@@ -118,24 +128,31 @@ Each format has its own set of types and rules. For small changes, only the head
 ## Gemini Models & Custom Endpoints
 
 Available free models:
+
 - `gemini-1.0-pro`: Base model, good for general use
 - `gemini-1.5-pro`: Enhanced version with better understanding
 - `gemini-1.5-flash`: Optimized for speed (default)
 - `gemini-2.0-flash-exp`: Experimental model with latest improvements
+
 ---
+
 The extension supports OpenAI-compatible API endpoints. This allows you to:
+
 - Use OpenAI API directly
 - Use self-hosted LLMs with OpenAI-compatible API
 - Connect to services like LocalAI, ollama, or other OpenAI API proxies
 
 To configure a custom endpoint:
+
 1. Enable "Use Custom Endpoint" in settings
 2. Set your endpoint URL (e.g., "https://api.openai.com/v1" for OpenAI)
 3. Set your model name (e.g., "gpt-3.5-turbo" for OpenAI)
 4. Use Command Palette (Ctrl+Shift+P) to set API key
 
 ### Configuration Requirements
+
 When using custom endpoint:
+
 - Both endpoint URL and model name must be configured
 - Appropriate API key must be set
 - Extension will warn if configuration is incomplete
@@ -143,6 +160,7 @@ When using custom endpoint:
 ## Example Messages
 
 Conventional format (complex change):
+
 ```
 feat(auth): implement user authentication system
 
@@ -152,6 +170,7 @@ feat(auth): implement user authentication system
 ```
 
 Emoji format:
+
 ```
 ✨ add real-time collaboration feature
 ```
@@ -202,17 +221,22 @@ GeminiCommit - расширение VSCode для автоматической �
 ### Модели & Эндпоинты
 
 Доступные бесплатные модели:
+
 - `gemini-1.0-pro`: Базовая модель, подходит для общего использования
 - `gemini-1.5-pro`: Улучшенная версия с лучшим пониманием контекста
 - `gemini-1.5-flash`: Оптимизирована для скорости (по умолчанию)
 - `gemini-2.0-flash-exp`: Экспериментальная модель с последними улучшениями
+
 ---
+
 Расширение поддерживает API-эндпоинты, совместимые с OpenAI. Это позволяет:
+
 - Использовать OpenAI API напрямую
 - Использовать self-hosted LLM с совместимым API
 - Подключаться к сервисам LocalAI, ollama и другим прокси OpenAI API
 
 Для настройки пользовательского эндпоинта:
+
 1. Включите "Use Custom Endpoint" в настройках
 2. Укажите URL эндпоинта (например, "https://api.openai.com/v1" для OpenAI)
 3. Укажите название модели (например, "gpt-3.5-turbo" для OpenAI)
@@ -221,10 +245,12 @@ GeminiCommit - расширение VSCode для автоматической �
 ## Community & Support
 
 ### 📢 Stay Updated
+
 - [Telegram Channel](https://t.me/geminicommit) - Release announcements and updates
 - [Telegram Group](https://t.me/gemini_commit) - Community discussions and support
 
 ### 🤝 Get Help
+
 - Report issues on [GitHub Issues](https://github.com/VizzleTF/GeminiCommit/issues)
 - Join our Telegram community for:
   - Quick support
@@ -232,11 +258,13 @@ GeminiCommit - расширение VSCode для автоматической �
   - Community updates
 
 ### 🛠 Technical Requirements
+
 - VS Code 1.93.0+
 - Git
 - Google AI API key or custom endpoint
 
 ### 👥 Contributing
+
 Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details
 
 ## License

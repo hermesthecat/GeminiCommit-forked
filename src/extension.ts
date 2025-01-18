@@ -1,3 +1,3 @@
-import { activate, deactivate } from './activation';
+import { activate, deactivate } from "./activation";
 
 export { activate, deactivate };
