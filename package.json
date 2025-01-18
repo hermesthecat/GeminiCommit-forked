@@ -80,7 +80,8 @@
                     "type": "string",
                     "enum": [
                         "english",
-                        "russian"
+                        "russian",
+                        "turkish"
                     ],
                     "default": "english",
                     "description": "Language for generated commit messages. Some commit formats may have limited support for non-English languages",
@@ -93,14 +94,16 @@
                         "angular",
                         "karma",
                         "semantic",
-                        "emoji"
+                        "emoji",
+                        "conventionalEmoji"
                     ],
                     "enumDescriptions": [
                         "type(scope): description\n\nbody\n\nfooter",
                         "type(scope): short summary\n\nbody\n\nfooter",
                         "type(scope): message",
                         "type: message",
-                        ":emoji: message"
+                        ":emoji: message",
+                        ":emoji: type(scope): message"
                     ],
                     "default": "conventional",
                     "description": "Format style for commit messages. All formats support English, some may have limited support for other languages",
